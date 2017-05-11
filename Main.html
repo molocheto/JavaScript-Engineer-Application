@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+<link rel="stylesheet" type="text/css" href="Styles/styles.css" media="screen" />
+<script src="Scripts/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script src="Scripts/jsFunctions.js" type="text/javascript"></script> 
+
+<script>
+    $(document).ready( function () {
+        var topStoriesJSON_URL = 'https://hacker-news.firebaseio.com/v0/topstories.json';
+        var itemsJSON_URL = 'https://hacker-news.firebaseio.com/v0/item/';
+        var usersJSON_URL = 'https://hacker-news.firebaseio.com/v0/user/';
+        var numOfStories = 10; //Number of stories to show
+
+        //Function that loads 10 random stories and additional data about them and their authors
+        //from 3 different JSON files and appends the HTML in the given DIV ID.
+        //The stories are ascendingly sorted by story score
+        showRandomStoriesInfo(numOfStories, 'show-data', topStoriesJSON_URL, itemsJSON_URL, usersJSON_URL);
+    });
+</script>
+
+</head>
+
+<body>
+
+    <div id="show-data">
+    </div>
+
+</body>
+
+</html> 

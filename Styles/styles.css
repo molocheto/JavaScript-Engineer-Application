@@ -1,0 +1,31 @@
+body {
+	font-family: 'Hiragino Kaku Gothic Pro', Meiryo, 'MS PGothic', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	color: #000;
+	background-color: #fff;
+	overflow-x: hidden;
+    margin-top: 35px;
+    margin-left: 70px;
+}
+
+dl dt {
+    margin-bottom:6px; 
+    color:#2E64FE; 
+    font-weight:bold;
+    font-size: 24px;
+}
+
+dd b {
+    font-size: 18px;
+    color:#A9A9F5; 
+}
+
+a:link, a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #808080;
+    text-decoration:none
+}
